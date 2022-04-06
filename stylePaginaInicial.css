@@ -1,0 +1,77 @@
+body
+{
+    background: #191919;;
+    width: 100%;
+    
+}
+
+.box
+{
+    width: 60%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centraliza a caixa de conteudo*/
+    padding: 10%;
+    border-radius: 24px;
+    text-align: center; /*text-align centraliza o conteúdo existente dentro de uma "caixa" ou classe*/
+}
+
+
+#saudacao
+{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(126, 167, 201);
+    padding: 0%;
+    font-size: 4em;
+}
+
+#subtitulo
+{
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
+
+#barraPesquisa
+{
+    text-align: center;
+    background:transparent;
+    /*display: block;*/
+    padding-left:5px;
+    font-size:20px;
+    color:#ffffff;
+    border-radius: 24px;
+    padding: 14px 100px;
+    outline: none;
+    transition: 1s;
+    width: 300px;
+    border-color: rgb(126, 167, 201);
+    border-width: 2px;
+}
+
+#barraPesquisa:focus /* O que acontecerá quando selecionar a barra de pesquisa para digitar */
+{
+    transition: 1s;
+    box-shadow: 5px 5px 5px rgb(165, 7, 147); /*Cor da sombra da barra*/
+    color:  white; /*Cor do texto inserido */
+}
+
+#botaoPesquisa
+{
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 10px;
+    position: absolute; /*Centralizar botão com a barra de pesquisa*/
+    right: 10%;
+}
+
+#botaoPesquisa:hover /* O que acontecerá quando passar o mouse por cima do botão pesquisar */
+{
+    transition: 0.5s;
+    background: #bbe7eb;
+    cursor: pointer; /* Altera o formato do cursor para o mesmo padrão de links */
+    box-shadow: 5px 5px 5px;
+    color: rgb(214, 41, 41);
+}

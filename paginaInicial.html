@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> <!--Conexão com o Google Fonts para estilizar a fonte da "saudacao"-->
+    <link rel="stylesheet" type="text/css" href="stylePaginaInicial.css"> <!--Conexão com a estilização em CSS-->
+    <script src='functionStylePaginaInicial.js'></script> <!--Conexão com o Script que vai realizar a pesquisa-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Formatar conteúdo para visualização em Web e Mobile -->
+    <title>Página Inicial</title> <!--Define o título na aba da página-->
+</head>
+
+<body>
+    <div class="box">
+        <div id="saudacao">
+            <h2>Bem vindo(a)</h2>
+        </div>
+        
+        <div id="subtitulo">
+            <label><strong>O que deseja saber hoje?</strong></label><br><br>
+        </div>
+        <form action="functionPaginaInicial.js" method="post">
+            
+            <label for="barraPesquisa">
+                <input type="input" id="barraPesquisa" value="" placeholder="DuckDuckGo Search" />
+            </label>
+            
+            <label for="botaoPesquisa">
+                <input type="image" id="botaoPesquisa" src="imagens\lupa.svg" value="" onclick="pesquisa()" alt="Pesquisar"></input>
+            </label>
+            <script type="functionPaginaInicial.js"> 
+                function pesquisa();
+            </script>
+   
+        </form>
+        <br><br>
+    </div>  
+    <br>
+    <br>
+</body>
+</html>
